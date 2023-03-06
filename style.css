@@ -1,139 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
 .container {
-  width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
-
-.banner {
-  position: relative;
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
 }
-.banner img {
-  width: 100%;
-  height: 300px;
-}
-
 .logo {
-  position: absolute;
-  top: 0;
-  color: white;
-  padding: 50px;
+    width: 250px;
+    cursor: pointer;
+    margin-left: 40px;
 }
-
-.logo h4 {
-  font-weight: bold;
-  font-size: 50px;
-  margin-bottom: 0;
-  
+nav{
+    flex: 1;
+    text-align: right;
 }
-
-.logo p {
-  font-style: italic;
-  font-size: 20px;
-  margin-top: 0;
-}
-
-nav {
-  align-items: right;
-  padding-left: 0;
-  align-items: right;
-  float: right;
-  padding: 0;
-}
-
 nav ul li {
-  display: inline-block;
-  text-align: right;
-  margin-left: 100px;
-  margin-top: 50px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
 }
-
-
-nav ul li a {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  position: relative;
-  transition: 5s;
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    transition: 5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 a:hover::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  bottom: 0;
-  border: 1px solid black;
-  transition: .5s;
-}
-
-.search {
-  float: right;
-  padding-top: 10px;
-  padding-right: 40px;
-}
-
-form {
-  background: white;
-  width: 50%;
-  height: 30px;
-  display: flex;
-}
-
-input {
-  flex: 1;
-  border: none;
-  outline: none;
-  color: black;
-  background: transparent;
-}
-
-button {
-  background: skyblue;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
+    content: "";
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    border: 1px solid white;
+    transition: .5s;
+  }
 .row {
-  display: flex;
-  height: 88%;
-  align-items: center;
-  padding-top: 60px;
+    display: flex;
+    height: 88%;
+    align-items: center;
 }
-
 .col {
-  flex-basis: 50%;
+    flex-basis: 50%;
 }
-
 h1 {
-  font-size: 40px;
-  margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-p {
-  font-size: 15px;
-  margin-top: 0;
+p{
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
+button{
+    width: 180px;
+    color: black;
+    font-size: 12px;
+    padding: 12px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: transform 0.5s;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:hover{
+    transform: translateY(-10px);
+}
 .card {
-  width: 200px;
-  height: 230px;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 15px 25px;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 10px 15px;
-  background-size: cover;
-  background-image: url(des1.jpeg);
+width: 190px;
+height: 200px;
+display: inline-block;
+border-radius: 10px;
+padding: 15px 25px;
+box-sizing: border-box;
+cursor: pointer;
+margin: 10px 15px;
+background-size: cover;
+
+background-position: center;
+transition: transform 0.5s;
 }
-.card:hover {
-  transform: scale(1.15);
-  opacity: 1;
+.card:hover{
+    transform: translateY(-10px);
 }
+.card1 {
+    background-image: url(des1.jpg);
+}
+.card2 {
+    background-image: url(des2.png);
+}
+.card3 {
+    background-image: url(des3.jpg);
+}
+.card4 {
+    background-image: url(des4.jpg);
+}
+h5{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.body2{
+    background: skyblue;
+}
+.wrapper{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+h2{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+form input{
+    width: 80%;
+    outline: none;
+    border: 1px solid white;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+
